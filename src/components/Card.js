@@ -2,6 +2,7 @@
 // Как "Можно лучше" посоветуйте вынести эти функции и переменные в модуль utils.js и импортировать их в класс Card.
 
 class Card {
+  /* Можно лучше: использовать деструктуризацию */
   constructor(data, cardSelector,handleCardClick) {
     this._text = data.name;
     this._link = data.link;
@@ -10,6 +11,7 @@ class Card {
   }
 
   _getTemplate() {
+    /* Можно лучше: возвращать значение сразу */
     const cardElement = document
       .querySelector(this._cardSelector)
       .content

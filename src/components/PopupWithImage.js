@@ -18,7 +18,7 @@ export default class PopupWithImage extends Popup {
     _addCaption(caption) {
         imageCaption.textContent = caption;
     }
-    
+
     open(link, alt) {
         super.open();
         this._addImage(link, alt);
@@ -26,3 +26,5 @@ export default class PopupWithImage extends Popup {
     }
 
 }
+
+/* Можно лучше: все сделано отлично, но создание alt можно вынести в util функции */

@@ -44,3 +44,6 @@ export default class Popup {
     }
 
 }
+
+/* Сделано отлично! Не забыто удаление Event Listeners, и то что при передаче функций в addEventListener / removeEventListener
+    следует использовать bind */

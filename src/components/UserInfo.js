@@ -8,6 +8,7 @@ export default class UserInfo {
     }
 
     getUserInfo() {
+        /* Можно лучше: можно сразу возвращать готовый объект, не объявляя лишние переменные */
         const profileTitle = this._nameSelector.textContent;
         const profileDescription = this._infoSelector.textContent;
 
@@ -22,3 +23,6 @@ export default class UserInfo {
         this._infoSelector.textContent = profileDescription;
     }
 }
+
+/* Можно лучше: исправить форматирование - лишняя строчка в начале файла, нет пустой строчки в конце файла,
+   кое-где не хватает пробелов (например, в сигнатуре функции setUserInfo) */

@@ -55,8 +55,5 @@ const cardFormValidator = new FormValidator(defaultFormConfig, cardFormModalWind
 editFormValidator.enableValidation();
 cardFormValidator.enableValidation();
 
-
-
-
-
-
+/* Надо исправить: все написано отлично, однако почему-то этот файл форматирован
+   двумя пробелами, зотя остальные js файлы четырьмя */

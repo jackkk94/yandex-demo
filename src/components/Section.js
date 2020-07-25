@@ -8,7 +8,7 @@ export default class Section {
         this._container = document.querySelector(containerSelector);
     }
 
-    
+    /* Надо исправить: кажется данный метод нигде не используется */
     addItem(element) {
         this._container.append(element);
     }
