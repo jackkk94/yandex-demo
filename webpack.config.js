@@ -45,3 +45,5 @@ module.exports = {
     new MiniCssExtractPlugin()
   ]
 };
+
+/* Все сделано правильное, решение рабочее и оптимальное */

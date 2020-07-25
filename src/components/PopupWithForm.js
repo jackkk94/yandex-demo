@@ -9,7 +9,10 @@ export default class PopupWithForm extends Popup {
         this._handleSubmit = handleSubmit;
     }
 
+    /* Надо исправить: кажется данный метод нигде не используется */
     _getInputValues() {
+        /* Надо исправить: values  следует объявлять через const, а не let, они не перезаписываются
+           Однако можно лучше - сразу возвращать значение, не присваивая его*/
         let values = Array.from(this._selector.querySelector('form').elements)
             .filter(el => el.type !== "submit")
             .map(el => {
